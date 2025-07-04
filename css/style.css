@@ -1,0 +1,164 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+    text-align:center;
+    font-family: Lato, sans-serif;
+    background-image: linear-gradient(#5A5AA5, #313159);
+    color: #F2F0EF;
+    margin: 0 0 60px 0; /*ocupar toda a tela*/
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 400;                 
+}
+
+h2{
+    color:#B7B6F6;
+    font-size: 40px;
+}
+
+h3{
+    font-size: 22px;
+    font-style: bold;
+}
+
+p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.titulo-verde{ /*quero colocar cada h3 de uma cor diferente. ao invés de escrever h3, crio uma classe para cada h3, usando "." (seletor de classe) para nomeá-la, com um título bem ilustrativo. no html, especificar a quem será atribuída a classe, com um atributo de tag */
+    color: #7DB093;
+}
+
+.titulo-rosa{
+    color:#B958BC;
+}
+
+.titulo-azul{
+    color:#659AD1;
+}
+
+section{
+    /* background-color: #E6ECFA;*/
+    width: 60%;
+    /*max-width: 60%; define largura máxima da section - 60% em relação a mãe dela, o <body>*/
+    margin:0 auto; /*margem top e bottom 0 right e left automatizar para não ficar chutando valores, auto deixa valores iguais dos 2 lados */
+}
+
+section section{ /*section que estiver dentro de outra section*/
+    width: 100%; /*ocupa toda a largura da section maior*/
+}
+
+img{
+    width: 100%;
+    /*border: #342F4D 2px dashed;
+    padding:1%;*/
+}
+
+ul{
+    list-style-type: none; /*lista desordenada sem nenhum tipo de estilo de lista*/
+    line-height: 2;
+    /*background-color: white; coloriir os elementos ajuda a identifica-los melhor*/
+    /*padding-top:50px;*/
+    padding-left: 0; /*tira o preenchimento esquerdo paadrão das bullet points ou da lista ordenada*/
+}
+
+a{
+    text-decoration: underline;
+    color:#B7B6F6;
+    font-weight:700;
+}
+
+ol{
+    list-style-type: none;
+    max-width: 60%;
+    display: inline;
+}
+
+.principal{
+    background-color:#313159;
+    height: 40px;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.principal a{ /*todas as tags "a" são filhas do elemento que tem a classe "principal".  */
+    text-decoration: none; /*deixa os links sem o sublinhado*/
+    color: #F2F0EF;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.principal a:hover{
+    background-color:#5B5BA6;
+}
+
+.principal li{
+    display:inline-block;
+    line-height: 2.3;
+    margin: 0 89px;
+}
+
+form{
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em 2em 2em 2em;
+    border: 1px solid #F2F0EF;
+    border-radius: 2px;
+    font-family: Lato, sans-serif;
+}
+
+.formulario{
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items:center;
+   margin-bottom: 25px;
+}
+    
+label {
+  /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+button{
+    background-color:#B7B6F6;
+    border: 1px solid transparent;
+    padding: 5px 20px 5px 20px;
+    border-radius: 3px;
+    color:#313159;
+    font-weight: bold;
+}
+
+button:hover{
+    background-color: #5A5AA5;
+    color: #F2F0EF;
+}
+
+#botaoTopo {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #313159; /* Set a background color */
+  color: #F2F0EF; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-family: Lato, sans-serif;
+  font-size: 16px; /* Increase font size */
+}
+
+#botaoTopo:hover {
+  background-color: #5A5AA5; /* Add a dark-grey background on hover */
+}
